@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Second Card</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 100vw;
+            height: 100vh;
+            min-height: 900px;
+            background: linear-gradient(45deg, rgba(49, 44, 0, 1.000) 0.000%, rgba(44, 51, 119, 1.000) 50.000%, rgba(17, 60, 204, 1.000) 100.000%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+
+        }
+
+        .card {
+            width:400px;
+            height: 700px;
+
+            background: linear-gradient(45deg, rgba(42, 0, 27, 1.000) 0.000%, rgba(255, 141, 34, 1.000) 50.000%, rgba(255, 255, 141, 1.000) 100.000%);
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 25px;
+            /* border: 8px solid gold; */
+        }
+
+        .card img {
+            height: 30%;
+            box-sizing: border-box;
+            /* padding: 40px; */
+            width: 100%;
+            /* border-radius: 50px; */
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+        }
+
+        /* .card h2 {
+            font-weight: bolder;
+            color: black;
+            font-size: 1.2rem;
+            width: 300px;
+        }
+
+        .card p {
+            color: white;
+            font-size: 1.1em;
+            width: 300px;
+            font-weight: lighter;
+        } */
+        .textbox{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 70%;
+            gap: 15px;
+            text-align: center;
+        }
+        .amountbox{
+            width: 90%;
+            height: 10%;
+            background-color:purple;
+            border-radius: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 30px;
+        }
+        #paymentButton{
+            width: 80%;
+            height: 9%;
+            background-color:darkblue;
+            color: aliceblue;
+            border-radius: 10px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.19),0 6px 6px rgba(0,0,0,0.23);
+        }
+        a{
+            text-decoration: none;
+            color: darkgray;
+            font-weight: bold;
+            font-size: large;
+
+        }
+        .t1{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .icon{
+            display: flex;
+            align-items: center;
+        }
+        .icon img{
+            height: 80px;
+            width: 80px;
+            border-radius: 50%;
+            padding: 15px;
+        }
+        .selection a{
+            color: blue;
+            text-decoration: underline;
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <img src="New-Project-18.jpg" alt="" >
+            <div class="textbox">
+                <h2>
+                    Order Summary
+                </h2>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore vel tempore veniam error quisquam corrupti iure maxime at unde numquam ipsam ea amet delectus dolorum alias ipsa quae beatae, dignissimos nisi reprehenderit nulla sequi quod assumenda laudantium. Sequi adipisci earum asperiores ut velit ullam pariatur.</p>
+            </div>
+            <div class="amountbox">
+                <div class="t1">
+                    <div class="icon">
+                        <img src="CL-Lhc30lu8CEAE=.webp" alt="" >
+                    </div>
+                    <div class="detail">
+                        <div class="plan">
+                            <h3>Annual Plan</h3>
+                            <h4>$99.9/year......</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="selection">
+                   <a href="#">Change</a> 
+                </div>
+            </div>
+
+            <button id="paymentButton">
+                Proceed to Payment
+            </button>
+
+            <div class="cancelbox">
+                <a href="#">Cancel order</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
